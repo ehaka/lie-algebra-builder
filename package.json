@@ -1,7 +1,7 @@
 {
   "name": "carnot-builder",
   "description": "A visual editor for central extensions of nilpotent Lie algebras.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "main.js",
   "author": "Eero Hakavuori",
   "homepage": "",
