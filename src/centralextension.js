@@ -25,11 +25,7 @@ function divideRow(matrix, r, m) {
     // divide elements of row r by m
     const row = matrix[r];
     for(let c in row) {
-        // rational-arithmetic division has a sign bug
-        const rc = row[c];
-        const d = div(rc,m);
-        const sgn = rc.sign*m.sign;
-        row[c] = new Rational(d.numerator, d.denominator, sgn);
+        row[c] = div(row[c], m);
     }
 }
 function subsRowWithMult(matrix, r1, r2, m) {
